@@ -95,7 +95,7 @@ class FileStorage:
             with open(FileStorage.__file_path, mode='w') as f_io:
                 pass
         except:
-            pass
+            pass 
         del FileStorage.__objects
         FileStorage.__objects = {}
         self.save()
