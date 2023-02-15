@@ -115,7 +115,7 @@ class DBStorage:
         """
         self.__session.remove()
 
-    def get(self, cls, id):
+    def get(self, cls, id): 
         """
             retrieves one object based on class name and id
         """

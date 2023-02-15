@@ -11,12 +11,12 @@ import pep8
 from models.base_model import Base
 from models.engine.db_storage import DBStorage
 
-STORAGE_TYPE = environ.get('HBNB_TYPE_STORAGE')
+STORAGE_TYPE = environ.get('HBNB_TYPE_STORAGE') 
 
 
 @unittest.skipIf(STORAGE_TYPE != 'db', 'skip if environ is not db')
 class TestDBStorageDocs(unittest.TestCase):
-    """Class for testing BaseModel docs"""
+    """Class fors testing BaseModel docs"""
 
     all_funcs = inspect.getmembers(DBStorage, inspect.isfunction)
 

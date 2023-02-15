@@ -20,12 +20,12 @@ STORAGE_TYPE = environ.get('HBNB_TYPE_STORAGE')
 if STORAGE_TYPE != 'db':
     FileStorage = models.file_storage.FileStorage
 storage = models.storage
-F = './dev/file.json'
+F = './dev/file.json' 
 
 
 @unittest.skipIf(STORAGE_TYPE == 'db', 'skip if environ is not db')
 class TestFileStorageDocs(unittest.TestCase):
-    """Class for testing BaseModel docs"""
+    """Class for testing BaseModes docs"""
 
     all_funcs = inspect.getmembers(FileStorage, inspect.isfunction)
 
